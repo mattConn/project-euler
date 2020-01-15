@@ -27,7 +27,7 @@ bool isPrime(int n)
 {
 	int divisor = 2;
 	
-	while(n > 1 && n > divisor)
+	while(n > divisor)
 	{
 		if(n % divisor == 0)
 			return false;
