@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
+
 bool isPrime(int n);
 
 int main(int argc, char **argv)
@@ -16,6 +18,9 @@ int main(int argc, char **argv)
 		{
 			//printf("%d\n", n);
 			count++;
+
+			if( (float)((int) log10(count)) == log10(count) )
+				printf("%d\n",(int) log10(count));
 		}
 	}
 	printf("%d: %d\n", count, n);
